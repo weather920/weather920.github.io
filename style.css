@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #492d41;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: auto;
+    background: #fff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    transition: 0.6s ease-out;
+}
+
+.search-box {
+    color: #06283d;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-box button:hover {
+    background-color: #1b4e72;
+}
+
+.search-box input {
+    color: #06283d;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.search-box input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283d;
+    text-transform: capitalize;
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283d;
+    background: #7dc2de;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: all 0.1s ease-in;
+}
+
+.search-box button {
+    color: #fff;
+    background-color: #06283d;
+}
+
+.fa-location-dot {
+    position: absolute;
+    color: #06283d;
+    font-size: 28px;
+}
+
+.weather {
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.weather h2 {
+    margin-top: 20px;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.details {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details i {
+    font-size: 80px;
+}
+
+.details p {
+    font-size: 28px;
+}
+
+.weather-box {
+    text-align: center;
+}
+
+.weather-image i {
+    font-size: 120px;
+}
+
+.error {
+    color: red;
+    text-align: left;
+    margin-top: 20px;
+    display: none;
+}
+
